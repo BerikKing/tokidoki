@@ -1,0 +1,20 @@
+.header-link {
+    background: #3A3C48;
+    &_inner {
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            color: #FFFFFF;
+            transition: all 500ms ease;
+        }
+        &-link:hover {
+            color: #DD392B;
+        }
+    }
+}
