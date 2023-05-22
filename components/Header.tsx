@@ -1,22 +1,27 @@
 import Link from "next/link";
+import React from "react";
+import { Head } from "next/document";
 // import Image from "next/image";
 const Header = () => {
+
 
     return (
         <>
         <section className="header">
             <div className="container">
                 <div className="header_inner">
-                    <div className="header_inner_logo">
-                        <Link href="#"><img src="/icons/logo.svg" alt="" /></Link>
-                        
-                    </div>
-                    <div className="header_inner_offer">
-                        <div className="header_inner_offer_text">
-                        От Японии до Владивостока <br />
-                                        один шаг с Токидоки 
+                    <div className="header_inner_left">
+                        <div className="header_inner_logo">
+                            <Link href="#"><img src="/icons/logo.svg" alt="" /></Link>
+                            
                         </div>
-                        <Link href="#" className="header_inner_offer_link">Агентский договор</Link>
+                        <div className="header_inner_offer">
+                            <div className="header_inner_offer_text">
+                            От Японии до Владивостока <br />
+                                            один шаг с Токидоки 
+                            </div>
+                            <Link href="#" className="header_inner_offer_link">Агентский договор</Link>
+                        </div>
                     </div>
                     <div className="header_inner_social">
                         <Link href="#" className="header_inner_social_img"><img src="/icons/vk-logo.svg" /></Link>

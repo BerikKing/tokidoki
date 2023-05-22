@@ -1,13 +1,18 @@
 import Link from "next/link"
+import HeaderLinkModal from "./HeaderLinkModal";
+import React, { PropsWithChildren, useRef } from "react";
 
 const HeaderLink = () => {
+    const [modalIsOpen, setModalIsOpen] = React.useState<boolean>(false);
+    const onCloseModal = () => setModalIsOpen(false);
     
     return (
         <>
             <div className="header-link">
+                <HeaderLinkModal active={modalIsOpen} onClose={onCloseModal}></HeaderLinkModal>
                 <div className="container">
                     <div className="header-link_inner">
-                        <Link href="#" className="header-link_inner-link">О наc</Link>
+                        <Link href="#" className="header-link_inner-link" onClick={() => setModalIsOpen(true)}>О наc</Link>
                         <Link href="#" className="header-link_inner-link">Новости</Link>
                         <Link href="#" className="header-link_inner-link">Аукционы</Link>
                         <Link href="#" className="header-link_inner-link">Конструктор</Link>
