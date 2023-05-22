@@ -7,13 +7,12 @@
     background: rgba(58, 60, 72, 0.98);
     border-radius: 17px;
     padding: 16px 24px 17px 32px;
-    
 }
 .modal {
     display: flex;
     justify-content: space-between;
-    color: #D2D3D8;
-    stroke: #D2D3D8;
+    align-items: center;
+    color: #d2d3d8;
     transition: all 500ms;
     &-link {
         font-style: normal;
@@ -21,26 +20,14 @@
         font-size: 15px;
         line-height: 273%;
     }
-    .svg {
-        display: flex;
-        align-items: center;
-        svg { 
-            fill: #D2D3D8;
-            stroke: #D2D3D8;
-            transition: fill 0.2s ease-in-out;
-        }
-        
-    }
-    
-}
-.modal:hover  {
-    color: #EF4D3F;
-    .svg:hover {
-        svg {
-            fill: #EF4D3F;
-            stroke: #EF4D3F;
-        }
+
+    #stroke {
+        stroke: #d2d3d8;
     }
 }
-
-
+.modal:hover {
+    color: #ef4d3f;
+    #stroke {
+        stroke: #ef4d3f;
+    }
+}
